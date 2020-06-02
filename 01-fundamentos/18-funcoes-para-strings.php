@@ -46,3 +46,32 @@ $objeto = "mouse";
 // que será inserido os caracteres
 echo str_pad($objeto, 10, '*', STR_PAD_BOTH);
 
+echo "<hr>";
+
+// str_repeat
+// Repete uma string utilizando de valor máximo
+// o segundo parâmetro que é um inteiro
+// Repetindo o valor dentro da variável 'nome' 3 vezes
+echo str_repeat($nome, 3);
+
+echo "<hr>";
+
+// strlen
+// Retorna o comprimento de uma string
+echo strlen($mensagem);
+
+echo "<hr>";
+
+// str_replace
+// Substitui palavra em texto
+// A função recebe como primeiro parâmetro a palavra
+// a ser substituída, como segundo parâmetro a palavra
+// substituta e por fim a string que sofrerá as modificações
+echo str_replace("mundo", "Brasil", $mensagem);
+
+echo "<hr>";
+
+// strpos
+// Retorna a posição de onde começa uma palavra
+// em um texto
+echo strpos($mensagem, "mundo");
