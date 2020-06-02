@@ -1,7 +1,7 @@
 <?php
 
 /*
-    ---------- Criando funçẽs ----------
+    ---------- Criando funções ----------
 */
 
 // Declarando uma função
