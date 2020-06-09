@@ -24,5 +24,31 @@
         <!-- botão que submete os dados -->
         <input type="submit" value="Enviar">
     </form>
+
+    <hr>
+
+    <!-- Formulário utilizando o método GET -->
+    <form action="dados.php" method="GET">
+        <label for="nome">
+            Nome:
+            <!-- entrada do nome -->
+            <input type="text" name="nome" id="nome">
+        </label>
+        <br>
+        <label for="nome">
+            E-mail:
+            <!-- entrada do email -->
+            <input type="email" name="email" id="email">
+        </label>
+        <br>
+        <!-- botão que submete os dados -->
+        <input type="submit" value="Enviar">
+    </form>
+
+    <!--
+        Utilizando dos parâmetros para enviar informações
+        para o script de dados
+    -->
+    <a href="dados.php?nome=Luan&email=luan@email.com">Enviar dados</a>
 </body>
 </html>
