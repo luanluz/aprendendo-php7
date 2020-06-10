@@ -15,7 +15,7 @@
             <input type="text" name="nome" id="nome">
         </label>
         <br>
-        <label for="nome">
+        <label for="email">
             E-mail:
             <!-- entrada do email -->
             <input type="email" name="email" id="email">
