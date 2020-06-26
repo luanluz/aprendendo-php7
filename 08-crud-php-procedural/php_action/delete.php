@@ -3,11 +3,14 @@
 // Exigindo a conexão com o banco de dados
 require_once 'db_connect.php';
 
+// Exigindo a função que remove o cross site scripting
+require_once '../includes/remove_xss.php';
+
 // Inicia sessão
 session_start();
 
 if ( isset($_POST['btn-deletar']) ) :
-    $id = mysqli_escape_string($connect, $_POST['id']);
+    $id = clear($_POST['id']);
 
     $sql = "DELETE FROM clientes WHERE id = '$id'";
 

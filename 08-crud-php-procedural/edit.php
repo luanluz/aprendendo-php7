@@ -8,9 +8,12 @@
     // Exigindo a conexão com o banco de dados
     require_once 'db_connect.php';
 
+    // Exigindo a função que remove o cross site scripting
+    require_once 'includes/remove_xss.php';
+
     // Verifica se há um parâmetro id
     if ( isset($_GET['id']) ) :
-        $id = mysqli_escape_string($connect, $_GET['id']);
+        $id = clear($_GET['id']);
 
         $sql = "SELECT * FROM clientes WHERE id = '$id'";
         $resultado = mysqli_query($connect, $sql);
